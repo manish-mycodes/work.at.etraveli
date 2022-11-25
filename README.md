@@ -31,7 +31,12 @@ For an extra assignment, you could add ratings and posters for your movies. This
 When a movie is selected, there should be a preview of the poster image and the ratings from Imdb, Rotten Tomatoes and MetaCritics in the detail view.
 Also an average rating should be calculated from the three ratings.
 
-![Bonus assignment](https://user-images.githubusercontent.com/19295785/203997276-4a415e65-b1d0-4e78-9938-60c27f5f7fec.png)
+<img width="1416" alt="Screenshot 2022-11-25 at 15 38 39" src="https://user-images.githubusercontent.com/19295785/204007727-1023f65b-0707-46e0-9fc9-4d82d6651ab2.png">
+
+There should be a way to order the movies by `Ratings` as the select menu shows in the image below:
+
+<img width="1413" alt="Screenshot 2022-11-25 at 15 39 51" src="https://user-images.githubusercontent.com/19295785/204007611-15e1d6ea-7c9b-405b-be39-b07856f62a72.png">
+
 
 **The image is just an example layout, feel free to design the layout of the bonus assignment yourself.**  
 
