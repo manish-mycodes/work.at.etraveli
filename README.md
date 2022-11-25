@@ -43,3 +43,5 @@ When a movie is selected, there should be a preview of the poster images and the
 Also the average rating should be calculated from the three ratings. 
 
 <img width="1427" alt="Screenshot 2022-11-25 at 14 33 55" src="https://user-images.githubusercontent.com/19295785/203997276-4a415e65-b1d0-4e78-9938-60c27f5f7fec.png">
+
+**The image is just an example layout, feel free to design the layout of the bonus assignment yourself**  
