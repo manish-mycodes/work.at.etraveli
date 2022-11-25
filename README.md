@@ -24,6 +24,17 @@ Additionally, there should be a way to filter the movies by entering their name 
 
 **The images above are just en example layout, but the final result should aim to have the same features, and somewhat same layout**.
 
+## Bonus assignment 
+
+For an extra assignment, you could add ratings and posters for your movies. This data should be fetched from the second endpoint: https://www.omdbapi.com/. To use this API, you will need an apikey: `2a1ad4b`
+
+When a movie is selected, there should be a preview of the poster image and the ratings from Imdb, Rotten Tomatoes and MetaCritics in the detail view.
+Also an average rating should be calculated from the three ratings.
+
+![Bonus assignment](https://user-images.githubusercontent.com/19295785/203997276-4a415e65-b1d0-4e78-9938-60c27f5f7fec.png)
+
+**The image is just an example layout, feel free to design the layout of the bonus assignment yourself.**  
+
 ## Tooling
 
 At Etraveli Group, we're developing primary using React and Redux, but you're free to complete this assignment in whichever way you're comfortable with. The only requirement we have is that it should be written in JavaScript or Typescript.
@@ -34,14 +45,3 @@ For this assignment, you should create a repository in Git and commit all your c
 ## Handing in the assignment
 
 You can hand in your assignment by creating a repository on GitHub and pushing it there. If you don't have a GitHub account, you can ZIP the repository and send it to us by email.
-
-# Bonus assingment 
-
-For an extra assignemnt, you could add a ratings and posters for your movies. That data should be fetched from the second endpoint: https://www.omdbapi.com/. To use this API, you would need an apikey: `2a1ad4b`
-
-When a movie is selected, there should be a preview of the poster images and the ratings from Imdb, Rotten Tomatoes and MetaCritics in the detail view.
-Also the average rating should be calculated from the three ratings. 
-
-<img width="1427" alt="Screenshot 2022-11-25 at 14 33 55" src="https://user-images.githubusercontent.com/19295785/203997276-4a415e65-b1d0-4e78-9938-60c27f5f7fec.png">
-
-**The image is just an example layout, feel free to design the layout of the bonus assignment yourself**  
