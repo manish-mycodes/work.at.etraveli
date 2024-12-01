@@ -1,12 +1,10 @@
 # To Implement this task I am using Next.js (React Framework) as recommended by [react](https://react.dev/)
 
-
-
+# Run -> npm install and then Run -> npm run dev
 
 # Front-end assignment at Etraveli Group
 
 For this assignment you'll create an app for listing Star Wars movies. The data should be fetched from the following endpoint: https://swapi.dev/api/films/?format=json.
-
 
 ## Description
 
@@ -29,7 +27,7 @@ Additionally, there should be a way to filter the movies by entering their name 
 
 **The images above are just en example layout, but the final result should aim to have the same features, and somewhat same layout**.
 
-## Bonus assignment 
+## Bonus assignment
 
 For an extra assignment, you could add ratings and posters for your movies. This data should be fetched from the second endpoint: https://www.omdbapi.com/. To use this API, you will need an apikey: `2a1ad4b`
 
@@ -42,15 +40,13 @@ There should be a way to order the movies by `Ratings` as the select menu shows 
 
 <img width="1413" alt="Screenshot 2022-11-25 at 15 39 51" src="https://user-images.githubusercontent.com/19295785/204007611-15e1d6ea-7c9b-405b-be39-b07856f62a72.png">
 
-
-**The image is just an example layout, feel free to design the layout of the bonus assignment yourself.**  
+**The image is just an example layout, feel free to design the layout of the bonus assignment yourself.**
 
 ## Tooling
 
 At Etraveli Group, we're developing primary using React and Redux, but you're free to complete this assignment in whichever way you're comfortable with. The only requirement we have is that it should be written in JavaScript or Typescript.
 
 For this assignment, you should create a repository in Git and commit all your changes in it. How you will hand in your code is explained below.
-
 
 ## Handing in the assignment
 
