@@ -5,4 +5,6 @@ export interface MovieObjectType {
     opening_crawl: string
     producer: string
     title: string
+    episode_id_numeric: string
+    episode_id_roman: string
 }

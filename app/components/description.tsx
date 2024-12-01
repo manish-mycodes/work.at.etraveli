@@ -1,18 +1,16 @@
-import { intToRoman } from '../utility/numberFormater'
-
 type Description = {
     title: string
     description: string
-    episodeId: number
+    episodeIdRoman: string
 }
 export default function Description({
-    episodeId,
+    episodeIdRoman,
     title,
     description,
 }: Description) {
     return (
         <div>
-            <h2 className="text-xl font-semibold ">{`EPISODE ${intToRoman(episodeId)} - ${title}`}</h2>
+            <h2 className="text-xl font-semibold ">{`${episodeIdRoman} - ${title}`}</h2>
             <div
                 dangerouslySetInnerHTML={{
                     __html: description,

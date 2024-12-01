@@ -1,5 +1,4 @@
 import { MovieObjectType } from '@/app/types'
-import { intToRoman } from '@/app/utility/numberFormater'
 
 export default function ListItems({
     items,
@@ -21,8 +20,8 @@ export default function ListItems({
                             <div className="flex justify-between">
                                 {/* Serial No and Title */}
                                 <div className="flex justify-start gap-4">
-                                    <div>{`Episode ${item.episode_id}`}</div>
-                                    <div>{`Episode ${intToRoman(item.episode_id)} ${item.title}`}</div>
+                                    <div>{`${item.episode_id_numeric}`}</div>
+                                    <div>{`${item.episode_id_roman} - ${item.title}`}</div>
                                 </div>
                                 {/* released date */}
                                 <div>{item.release_date}</div>

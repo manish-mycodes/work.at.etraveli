@@ -1,7 +1,9 @@
 export default function SortOptionsList({
     sortByCloseHandler,
+    sortByHandler,
 }: {
     sortByCloseHandler: () => void
+    sortByHandler: (text: string) => void
 }) {
     return (
         <div className="absolute top-10 w-[200px] h-[200px] border border-gray-200 rounded-md z-1 bg-gray-50 shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
@@ -19,10 +21,16 @@ export default function SortOptionsList({
                 </div>
                 <div className="flex flex-col justify-start">
                     <ul className="text-xs cursor-pointer  ">
-                        <li className="p-2 border-t  border-b border-gray-300 hover:bg-gray-200">
+                        <li
+                            onClick={() => sortByHandler('Episode')}
+                            className="p-2 border-t  border-b border-gray-300 hover:bg-gray-200"
+                        >
                             Episode
                         </li>
-                        <li className="p-2 border-b  border-gray-300 hover:bg-gray-200">
+                        <li
+                            onClick={() => sortByHandler('Year')}
+                            className="p-2 border-b  border-gray-300 hover:bg-gray-200"
+                        >
                             Year
                         </li>
                     </ul>
