@@ -40,6 +40,7 @@ export default function SearchBar({
                         placeholder="Search..."
                         value={searchText}
                         onChange={onChangeHandler}
+                        data-testid="search-input"
                         className="w-full pl-8 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-300 focus:border-blue-300 text-sm"
                     />
                     <div className="absolute bottom-[6px] inset-y-0 left-0 flex items-center pl-3 pt-1 ">
