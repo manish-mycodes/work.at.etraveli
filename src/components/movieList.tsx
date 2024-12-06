@@ -1,10 +1,10 @@
 'use client'
-import { SetStateAction, useEffect, useState } from 'react'
-import ListItems from '../components/movieListItems/listItems'
+import { useEffect, useState } from 'react'
+import ListItems from '../components/listItems'
 import SearchBar from '../components/searchBar'
 import { MovieObjectType } from '../types'
 import Description from '../components/description'
-import { intToRoman } from '../utility/numberFormater'
+import { intToRoman } from '../utility/numberFormatter'
 
 export default function MovieList() {
     const [currentMovieSelected, setCurrentMovieSelected] =

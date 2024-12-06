@@ -1,4 +1,4 @@
-type Description = {
+type DescriptionType = {
     title: string
     description: string
     episodeIdRoman: string
@@ -7,7 +7,7 @@ export default function Description({
     episodeIdRoman,
     title,
     description,
-}: Description) {
+}: DescriptionType) {
     return (
         <div>
             <h2 className="text-xl font-semibold ">{`${episodeIdRoman} - ${title}`}</h2>
