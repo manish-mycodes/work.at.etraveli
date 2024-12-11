@@ -1,6 +1,7 @@
 import { MovieObjectType } from '../types'
 import { render, screen } from '@testing-library/react'
 import ListItems from '../components/listItems'
+import { MovieContextProvider } from '../components/movieContextProvider'
 
 describe('ListItems', () => {
     const mockData: MovieObjectType[] = [

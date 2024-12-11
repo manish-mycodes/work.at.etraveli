@@ -1,16 +1,14 @@
 'use client'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import SortOptionsList from './sortOptionsList'
+import { MovieContextType } from '../types'
+import MovieContext from './movieContextProvider'
 
-export default function SearchBar({
-    searchInputHandler,
-    sortByHandler,
-}: {
-    searchInputHandler: (text: string) => void
-    sortByHandler: (text: string) => void
-}) {
-    const [sortByOpen, setSortByOpen] = useState(false)
-    const sortByCloseHandler = () => setSortByOpen(false)
+export default function SearchBar() {
+    const { searchInputHandler, sortByOpen, sortByOpenHandler } = useContext(
+        MovieContext
+    ) as MovieContextType
+
     const [searchText, setSearchText] = useState('')
     const onChangeHandler = (e: any) => {
         setSearchText(e.target.value)
@@ -22,16 +20,11 @@ export default function SearchBar({
             <div className="relative">
                 <button
                     className={`border border-gray-300  p-2 rounded-md w-20 bg-gray-50 text-xs font-bold ${sortByOpen ? 'text-blue-500' : 'text-gray-500'}`}
-                    onClick={() => setSortByOpen((prev) => !prev)}
+                    onClick={() => sortByOpenHandler()}
                 >
                     Sort by...
                 </button>
-                {sortByOpen && (
-                    <SortOptionsList
-                        sortByCloseHandler={sortByCloseHandler}
-                        sortByHandler={sortByHandler}
-                    />
-                )}
+                {sortByOpen && <SortOptionsList />}
             </div>
             <div className="flex flex-1 ">
                 <div className="w-full relative">

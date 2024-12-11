@@ -1,10 +1,11 @@
-export default function SortOptionsList({
-    sortByCloseHandler,
-    sortByHandler,
-}: {
-    sortByCloseHandler: () => void
-    sortByHandler: (text: string) => void
-}) {
+import { useContext } from 'react'
+import { MovieContextType } from '../types'
+import MovieContext from './movieContextProvider'
+
+export default function SortOptionsList() {
+    const { sortByHandler, sortByCloseHandler } = useContext(
+        MovieContext
+    ) as MovieContextType
     return (
         <div className="absolute top-10 w-[200px] h-[200px] border border-gray-200 rounded-md z-1 bg-gray-50 shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
             <div className="flex flex-col">

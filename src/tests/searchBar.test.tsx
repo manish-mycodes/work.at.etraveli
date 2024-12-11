@@ -1,15 +1,15 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import SearchBar from '../components/searchBar'
+import { MovieContextProvider } from '../components/movieContextProvider'
 
 describe('SearchBar', () => {
     test('calls searchInputHandler fn on input change', () => {
         const mockSearchHandler = jest.fn()
-        const mockSortHandler = jest.fn()
+
         render(
-            <SearchBar
-                searchInputHandler={mockSearchHandler}
-                sortByHandler={mockSortHandler}
-            />
+            <MovieContextProvider>
+                <SearchBar />
+            </MovieContextProvider>
         )
         const searchInput = screen.getByTestId('search-input')
         fireEvent.change(searchInput, { target: { value: 'The' } })
