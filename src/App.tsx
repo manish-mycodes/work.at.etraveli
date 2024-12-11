@@ -1,7 +1,12 @@
-import MovieList from "./components/movieList";
+import { MovieContextProvider } from './components/movieContextProvider'
+import MovieList from './components/movieList'
 
 function App() {
-  return <MovieList />
+    return (
+        <MovieContextProvider>
+            <MovieList />
+        </MovieContextProvider>
+    )
 }
 
-export default App;
+export default App
